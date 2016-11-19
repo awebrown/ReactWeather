@@ -9,7 +9,9 @@ let React = require('react'),
     About = require('About'),
     Examples = require('Examples');
 
+//style!css! are chained loaders, look in webpack.config.js
 require('style!css!foundation-sites/dist/foundation.min.css');
+//using jquery to tie in foundation 
 $(document).foundation();
 
 ReactDOM.render(
