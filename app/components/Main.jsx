@@ -1,3 +1,5 @@
+'use strict';
+
 let React = require('react'),
     Nav = require('Nav');
 
