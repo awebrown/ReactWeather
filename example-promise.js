@@ -32,27 +32,27 @@
 //   console.log('promise error', err);
 // })
 
-                                                                            
+
 //Challenge Area
 
-function addPromise(a, b) {
-  return new Promise(function(res, rej) {
-    if(typeof a === 'number' && typeof b == 'number') {
-      res(a + b);
-    } else {
-      rej('A and B need to be numbers');
-    }
-  })
-}
-
-addPromise(6, 8).then(function(total) {
-    console.log('Success: ', total);
-}, function(err) {
-    console.log('Error:', err);
-  });
-
-  addPromise(6, 'tony').then(function(total) {
-      console.log('Success: ', total);
-  }, function(err) {
-      console.log('Error:', err);
-    })
+// function addPromise(a, b) {
+//   return new Promise(function(res, rej) {
+//     if(typeof a === 'number' && typeof b == 'number') {
+//       res(a + b);
+//     } else {
+//       rej('A and B need to be numbers');
+//     }
+//   })
+// }
+//
+// addPromise(6, 8).then(function(total) {
+//     console.log('Success: ', total);
+// }, function(err) {
+//     console.log('Error:', err);
+//   });
+//
+//   addPromise(6, 'tony').then(function(total) {
+//       console.log('Success: ', total);
+//   }, function(err) {
+//       console.log('Error:', err);
+//     })

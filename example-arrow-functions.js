@@ -1,4 +1,4 @@
-2//
+//
 // //the forEach function runs for every element of array
 // //take three args, i = element; j = index; k = array
 // names.forEach((name) => console.log(name));
@@ -39,11 +39,11 @@
 //   return a + b;
 // }
 
-let addStatement = (a, b) => {
-  return a + b;
-}
-
-let addExpression = (a, b) => a + b;
-
-console.log(addStatement(1,3));
-console.log(addExpression(9,0));
+// let addStatement = (a, b) => {
+//   return a + b;
+// }
+//
+// let addExpression = (a, b) => a + b;
+//
+// console.log(addStatement(1,3));
+// console.log(addExpression(9,0));
