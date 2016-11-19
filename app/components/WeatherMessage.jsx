@@ -2,7 +2,7 @@
 
 let React = require('react'),
     Weather = require('Weather');
-
+    
 let WeatherMessage = ({temp, location}) => {
     return (
       <div>
