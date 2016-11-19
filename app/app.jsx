@@ -11,8 +11,11 @@ let React = require('react'),
 
 //style!css! are chained loaders, look in webpack.config.js
 require('style!css!foundation-sites/dist/foundation.min.css');
-//using jquery to tie in foundation 
+//using jquery to tie in foundation
 $(document).foundation();
+
+//App css
+require('style!css!applicationStyles');
 
 ReactDOM.render(
   <Router history={hashHistory}>

@@ -7,25 +7,23 @@ const OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?app
 module.exports = {
   getTemp: function(location) {
     let encodedLocation = encodeURIComponent(location);
-    let requestUrl;
-    if(isNaN(location)) {
-      requestUrl = `${OPEN_WEATHER_MAP_URL}&q=${encodedLocation}`;
-    } else {
-      requestUrl = `${OPEN_WEATHER_MAP_URL}&zip=${encodedLocation},us`;
-    }
+    // let requestUrl;
+    // if(isNaN(location)) {
+    let requestUrl = `${OPEN_WEATHER_MAP_URL}&q=${encodedLocation}`;
+    // } else {
+    //   requestUrl = `${OPEN_WEATHER_MAP_URL}&zip=${encodedLocation},us`;
+    // }
 
     return axios.get(requestUrl).then(function(res) {
-      console.log(res)
       if(res.data.cod && res.data.message) {
         throw new Error(res.data.message);
       } else {
-        return {
-          temp: res.data.main.temp,
-          location: res.data.name
-        };
+        return res.data.main.temp;
       }
     }, function(res) {
-      throw new Error(res.data.message);
+
+      throw new Error(res.response.data.message);
+
     });
   }
 }

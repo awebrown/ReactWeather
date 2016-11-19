@@ -20,10 +20,10 @@ let Weather = React.createClass({
       errorMessage: undefined
     });
 
-    openWeatherMap.getTemp(location).then(function({temp, location}) {
+    openWeatherMap.getTemp(location).then(function(temp) {
       that.setState({
         isLoading: false,
-        temp: Math.round(temp),
+        temp: temp,
         location: location
       });
     }, function(e) {
@@ -54,7 +54,7 @@ let Weather = React.createClass({
 
     return (
       <div className="row">
-        <h1 className="text-center">Get Weather</h1>
+        <h1 className="text-center page-title">Get Weather</h1>
         <WeatherForm onSearch={this.handleSearch} />
         {renderMessage()}
         {renderError()}
