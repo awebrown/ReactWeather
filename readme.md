@@ -1,3 +1,3 @@
-A React Weather Application
 
-awebrown-weather.herokuapp.com
+
+<a href="awebrown-weather.herokuapp.com" target="_blank">A React Weather Application</a>
