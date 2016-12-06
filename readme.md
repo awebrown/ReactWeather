@@ -1,1 +1,1 @@
-[A React Weather Application](awebrown-weather.herokuapp.com)
+[A React Weather Application](http://awebrown-weather.herokuapp.com)
